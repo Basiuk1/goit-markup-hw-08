@@ -1,0 +1,244 @@
+/* Основний колір тексту #757575; */
+/* Додатковий колір тексту #212121; */
+/* Надписи білим кольором  #FFFFFF; */
+/* Колір акценту #2196F3; */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --logo-black-color: #000000;
+  --hero-footer-black-color: #2f303a;
+  --acent: #2196f3;
+  --second-accent: #188ce8;
+  --white: #ffffff;
+  --white-page: #f5f5f5;
+  --other-white: #f5f4fa;
+  --white-portfolio: #eeeeee;
+}
+
+.page {
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+}
+
+.upper-line {
+  background-color: var(--white);
+}
+.logo {
+  color: var(--logo-black-color);
+
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--acent);
+}
+.list {
+  list-style: none;
+}
+/* Site nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent);
+}
+.site-nav .link.current {
+  color: var(--acent);
+}
+
+.contacts a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--acent);
+}
+/* Стилі для index.html*/
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+/* Section cap */
+.hero {
+  background-color: var(--hero-footer-black-color);
+}
+.hero-title {
+  color: var(--white);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.button {
+  font-family: inherit;
+}
+
+.hero .button {
+  background-color: var(--acent);
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.hero .button:hover,
+.hero .button:active {
+  background: var(--second-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* Features */
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.features-title .title {
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.features .feature {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* What we do */
+
+.working-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+/* Our team */
+
+/*.section-team {
+  background-color: var(--white);
+}*/
+.team {
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+/* Footer */
+.footer {
+  background-color: var(--hero-footer-black-color);
+}
+.footer .logo {
+  color: var(--white);
+}
+.footer-title a {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+}
+.address {
+  color: var(--white);
+}
+
+/* Стилі для portfolio.html */
+
+/* Фільтр */
+
+.section-button .btn {
+  background: var(--other-white);
+  color: var(--title-text-color);
+  border-style: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.section-button .btn:hover,
+.section-button .btn:active {
+  background: var(--acent);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-style: none;
+}
+.section-button .btn.current {
+  background: var(--acent);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* Проєкти */
+.project .title {
+  background: var(--white);
+  border: 1px solid var(--white-portfolio);
+}
+.project .project-name {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project .project-type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
