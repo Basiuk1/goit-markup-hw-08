@@ -20,6 +20,30 @@
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+
+  background-color: red;
+}
+
+.container {
+  background-color: greenyellow;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .upper-line {
@@ -37,12 +61,25 @@
 .logo-web {
   color: var(--acent);
 }
-.list {
-  list-style: none;
-}
+
 /* Site nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -59,7 +96,15 @@
   color: var(--acent);
 }
 
-.contacts a {
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+.contacts .link {
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -68,26 +113,27 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contacts a:hover,
-.contacts a:focus {
+
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--acent);
 }
 /* Стилі для index.html*/
 
 /* Section */
 
-.section-title {
-  color: var(--title-text-color);
-
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
 /* Section cap */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--hero-footer-black-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
   color: var(--white);
 
   font-weight: 900;
@@ -101,10 +147,15 @@
 }
 
 .hero .button {
+  /*margin-bottom: 200px;*/
+
+  border-radius: 4px;
+  padding: 10px 32px;
+
   background-color: var(--acent);
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+
   border-style: none;
 
   font-size: 16px;
@@ -120,10 +171,22 @@
 /* Features */
 
 .visually-hidden {
+  margin: 0px;
   visibility: hidden;
+}
+.features-title {
+  display: flex;
+}
+
+.features .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-title .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-size: 14px;
@@ -132,6 +195,9 @@
 }
 
 .features .feature {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -140,11 +206,18 @@
 /* What we do */
 
 .working-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+.working .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Our team */
@@ -152,6 +225,21 @@
 /*.section-team {
   background-color: var(--white);
 }*/
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.section-team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team {
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -160,6 +248,9 @@
 }
 
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -168,6 +259,9 @@
   letter-spacing: 0.03em;
 }
 .team-position {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -197,6 +291,9 @@
 /* Фільтр */
 
 .section-button .btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+
   background: var(--other-white);
   color: var(--title-text-color);
   border-style: none;
@@ -225,10 +322,29 @@
 }
 
 /* Проєкти */
+
+.project-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .project .title {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
   background: var(--white);
   border: 1px solid var(--white-portfolio);
 }
+.project .title:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.project .title:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .project .project-name {
   color: var(--title-text-color);
 
