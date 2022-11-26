@@ -17,16 +17,13 @@
 }
 
 .page {
+  margin: 0px auto;
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
-
-  background-color: red;
 }
 
 .container {
-  background-color: greenyellow;
-
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -48,6 +45,7 @@
 
 .upper-line {
   background-color: var(--white);
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   color: var(--logo-black-color);
@@ -131,8 +129,8 @@
   text-align: center;
 }
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  max-width: 696px;
+  margin: 0 auto 30px;
 
   color: var(--white);
 
@@ -173,14 +171,29 @@
 .visually-hidden {
   margin: 0px;
   visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .features-title {
   display: flex;
 }
+.features .item {
+  margin-right: 30px;
+}
+.features .item:nth-child(4n) {
+  margin-right: 0px;
+}
 
 .features .container {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .features-title .title {
@@ -204,8 +217,18 @@
 }
 
 /* What we do */
+.working-list {
+  display: flex;
+}
+.working .item {
+  margin-right: 30px;
+}
+.working .item:nth-child(3n) {
+  margin-right: 0px;
+}
 
 .working-title {
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
 
@@ -217,7 +240,6 @@
 }
 .working .container {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Our team */
@@ -227,6 +249,7 @@
 }*/
 
 .section-title {
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
 
@@ -236,18 +259,32 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
 .section-team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
 .team {
+  margin-right: 30px;
+
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .team-name {
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -258,7 +295,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .team-position {
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -266,13 +305,24 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 /* Footer */
 .footer {
   background-color: var(--hero-footer-black-color);
 }
+.second-logo {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
 .footer .logo {
   color: var(--white);
+  margin-bottom: 20px;
 }
+.footer-title {
+  padding-bottom: 60px;
+}
+
 .footer-title a {
   color: rgba(255, 255, 255, 0.6);
 
@@ -282,6 +332,7 @@
   text-decoration: none;
   font-style: normal;
 }
+
 .address {
   color: var(--white);
 }
@@ -289,7 +340,21 @@
 /* Стилі для portfolio.html */
 
 /* Фільтр */
+.filters {
+  display: flex;
+  justify-content: center;
+}
 
+.section-button {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.section-button .item {
+  margin-right: 8px;
+}
+.section-button .item:nth-child(5n) {
+  margin-right: 0px;
+}
 .section-button .btn {
   border-radius: 4px;
   padding: 6px 22px;
@@ -322,6 +387,9 @@
 }
 
 /* Проєкти */
+.project {
+  padding-bottom: 94px;
+}
 
 .project-title {
   display: flex;
@@ -334,8 +402,8 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  background: var(--white);
-  border: 1px solid var(--white-portfolio);
+  /* background: var(--white);
+  border: 1px solid var(--white-portfolio);*/
 }
 .project .title:nth-child(3n) {
   margin-right: 0px;
