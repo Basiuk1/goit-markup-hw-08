@@ -402,8 +402,8 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  /* background: var(--white);
-  border: 1px solid var(--white-portfolio);*/
+  background: var(--white);
+  border: 1px solid var(--white-portfolio);
 }
 .project .title:nth-child(3n) {
   margin-right: 0px;
