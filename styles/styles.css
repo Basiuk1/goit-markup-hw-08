@@ -36,6 +36,10 @@
 
   list-style: none;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Main-nav */
 .main-nav {
@@ -192,10 +196,6 @@
   margin-right: 0px;
 }
 
-.features .container {
-  padding-top: 94px;
-}
-
 .features-title .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -217,6 +217,10 @@
 }
 
 /* What we do */
+.working {
+  padding-top: 0px;
+}
+
 .working-list {
   display: flex;
 }
@@ -238,15 +242,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.working .container {
-  padding-top: 94px;
-}
-
 /* Our team */
-
-/*.section-team {
-  background-color: var(--white);
-}*/
 
 .section-title {
   text-align: center;
@@ -258,11 +254,6 @@
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-
-.section-team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-list {
@@ -282,12 +273,15 @@
 .team:nth-child(4n) {
   margin-right: 0px;
 }
+.team-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-name {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
-
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -346,9 +340,9 @@
 }
 
 .section-button {
-  padding-top: 94px;
   padding-bottom: 50px;
 }
+
 .section-button .item {
   margin-right: 8px;
 }
@@ -388,7 +382,7 @@
 
 /* Проєкти */
 .project {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 
 .project-title {
