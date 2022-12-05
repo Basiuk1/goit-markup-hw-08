@@ -456,8 +456,6 @@
 /* Footer */
 .footer {
   background-color: var(--hero-footer-black-color);
-  max-width: 1600px;
-  height: 252px;
   margin-left: auto;
   margin-right: auto;
 }
