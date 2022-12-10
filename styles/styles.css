@@ -151,17 +151,8 @@
 .nav-icon {
   fill: currentColor;
   margin-right: 10px;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-right: 10px;
-  fill: var(--icon-color);*/
 }
-/*.nav-icon:hover,
-.nav-icon:focus {
-  fill: var(--acent);
-}*/
+
 /* Стилі для index.html*/
 
 /* Section */
@@ -204,8 +195,6 @@
 }
 
 .hero .button {
-  /*margin-bottom: 200px;*/
-
   border-radius: 4px;
   padding: 10px 32px;
 
@@ -263,29 +252,6 @@
   display: block;
   margin: auto;
 }
-/*
-.features .item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-image: url(../images/antenna-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-}
-.features .item:nth-child(1)::before {
-  background-image: url(../images/antenna-icon.svg);
-}
-.features .item:nth-child(2)::before {
-  background-image: url(../images/clock-icon.svg);
-}
-.features .item:nth-child(3)::before {
-  background-image: url(../images/diagram-icon.svg);
-}
-.features .item:nth-child(4)::before {
-  background-image: url(../images/astronaut-icon.svg);
-}*/
 
 .features .item:nth-child(4n) {
   margin-right: 0px;
@@ -349,7 +315,6 @@
   padding-top: 27px;
   padding-bottom: 27px;
 
-  /*padding: 27px 107px;*/
   margin: 0 auto;
 
   font-weight: 700;
