@@ -74,6 +74,8 @@
 }
 .site-nav .item {
   margin-right: 50px;
+
+  position: relative;
 }
 .site-nav .item:last-child {
   margin-right: 0;
@@ -91,6 +93,9 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -98,6 +103,20 @@
 }
 .site-nav .link.current {
   color: var(--acent);
+}
+
+.current::after {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  height: 4px;
+  width: 100%;
+
+  background: var(--acent);
+  border-radius: 2px;
 }
 
 .contacts {
@@ -119,6 +138,9 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .link:hover,
@@ -198,6 +220,9 @@
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero .button:hover,
 .hero .button:active {
@@ -413,6 +438,9 @@
   height: 44px;
 
   fill: var(--icon-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -464,6 +492,9 @@
   color: var(--icon-color);
   border: 1px solid;
   border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
@@ -559,6 +590,9 @@
   fill: var(--white);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join .footer-icon:hover,
 .join .footer-icon:focus {
@@ -659,6 +693,9 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-button .btn:hover,
@@ -669,6 +706,7 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border-style: none;
+  cursor: pointer;
 }
 .section-button .btn.current {
   background: var(--acent);
@@ -696,7 +734,9 @@
   margin-bottom: 30px;
 
   background: var(--white);
-  /*border: 1px solid var(--white-portfolio);*/
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-item:nth-child(3n) {
   margin-right: 0px;
@@ -710,6 +750,8 @@
 .project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
 }
 
 .project .project-name {
