@@ -385,6 +385,17 @@
             </li>
           </ul>
         </div>
+        <div class="sign">
+          <p class="sign-text">Підпишіться на розсилку</p>
+          <form>
+            <input name="user-email" type="email" placeholder="E-mail" />
+            <button type="submit" class="sign-button">
+              Підписатися<svg width="24" height="24" class="sign-icon">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -413,13 +424,17 @@
         <input type="email" name="mail" id="mail" />
       </div>
 
-      <label for="comment">Коментар</label>
-      <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+      <div class="form-field">
+        <label for="comment">Коментар</label>
+        <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+      </div>
 
-      <label for="checkbox"></label>
-      <input type="checkbox" name="" id="checkbox" />
-      Погоджуюся з розсилкою та приймаю
-      <a href="">Умови договору</a>
+      <div class="form-field">
+        <label for="checkbox"></label>
+        <input type="checkbox" name="" id="checkbox" />
+        Погоджуюся з розсилкою та приймаю
+        <a href="">Умови договору</a>
+      </div>
       <button type="submit">Відправити</button>
     </form>
     <script src="./modal.js"></script>
