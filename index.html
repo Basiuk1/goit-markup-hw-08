@@ -13,33 +13,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!--<link rel="stylesheet" href=".css\main.min.css" />-->
+
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="page">
-    <!--Pointer-->
-    <div></div>
     <!--Шапка-->
-    <header class="upper-line">
-      <div class="container main-nav">
+    <header class="header">
+      <div class="header__container">
         <a class="logo" href=""><span class="logo-web">Web</span>Studio</a>
         <nav>
-          <ul class="site-nav list">
-            <li class="item"><a href="" class="link current">Студія</a></li>
-            <li class="item"><a href="portfolio.html" class="link">Портфоліо</a></li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="" class="nav__link current">Студія</a></li>
+            <li class="nav__item"><a href="portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="nav-icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              ><svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link"
-              ><svg class="nav-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -49,18 +49,16 @@
     </header>
     <main>
       <!--Cap-->
-      <section class="hero section hero-overlay">
-        <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button" data-modal-open>Замовити послугу</button>
-        </div>
+      <section class="hero">
+        <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </section>
       <!--Features-->
-      <section class="features section">
-        <div class="container">
-          <h2 class="visually-hidden">Переваги</h2>
-          <ul class="features-title list">
-            <li class="item">
+      <section class="features">
+        <div class="features__container">
+          <h2 class="hidden">Переваги</h2>
+          <ul class="features__list">
+            <li class="features__item">
               <div class="features-icons">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
@@ -71,7 +69,7 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="item">
+            <li class="features__item">
               <div class="features-icons">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
@@ -82,7 +80,7 @@
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="item">
+            <li class="features__item">
               <div class="features-icons">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
@@ -91,7 +89,7 @@
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="feature">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li class="item">
+            <li class="features__item">
               <div class="features-icons">
                 <svg class="features-icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
