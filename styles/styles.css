@@ -9,7 +9,7 @@
   --title-text-color: #212121;
   --logo-black-color: #000000;
   --hero-footer-black-color: #2f303a;
-  --acent: #2196f3;
+  --accent: #2196f3;
   --second-accent: #188ce8;
   --white: #ffffff;
   --white-page: #f5f5f5;
@@ -20,6 +20,10 @@
 
 .page {
   margin: 0px auto;
+
+  display: block;
+  width: 1600px;
+
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -72,12 +76,12 @@
   margin-right: 93px;
 }
 .header__logo-web {
-  color: var(--acent);
+  color: var(--accent);
 }
 
 /* Site nav */
 
-.nav__list {
+.nav {
   display: flex;
   padding: 0;
   margin: 0;
@@ -110,13 +114,14 @@
 }
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--acent);
-}
-.nav__link.current {
-  color: var(--acent);
+  color: var(--accent);
 }
 
-.current::after {
+.nav__link--current {
+  color: var(--accent);
+}
+
+.nav__link--current::after {
   content: '';
 
   position: absolute;
@@ -126,10 +131,9 @@
   height: 4px;
   width: 100%;
 
-  background: var(--acent);
+  background: var(--accent);
   border-radius: 2px;
 }
-
 .contacts {
   display: flex;
   margin-left: auto;
@@ -166,7 +170,7 @@
 
 .contacts__link:hover,
 .contacts__link:focus {
-  color: var(--acent);
+  color: var(--accent);
 }
 
 .contacts__icon {
@@ -216,7 +220,7 @@
   border-radius: 4px;
   padding: 10px 32px;
 
-  background-color: var(--acent);
+  background-color: var(--accent);
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -251,7 +255,7 @@
   margin: 0px auto;
 }
 
-.hidden {
+.features__hidden {
   margin: 0px;
   visibility: hidden;
   position: absolute;
@@ -389,14 +393,16 @@
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background: #f5f4fa;
 }
 
-.team__container {
+/*.team__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0px auto;
-}
+}*/
 
 .team__title {
   text-align: center;
@@ -497,7 +503,7 @@
 
 .team__social-link:hover,
 .team__social-link:focus {
-  background-color: var(--acent);
+  background-color: var(--accent);
   fill: var(--white);
   border-radius: 50%;
 }
@@ -566,8 +572,8 @@
 }
 .customers__link:hover,
 .customers__link:focus {
-  color: var(--acent);
-  fill: var(--acent);
+  color: var(--accent);
+  fill: var(--accent);
 }
 
 .customers__icon {
@@ -614,13 +620,14 @@
 }
 
 .address__list {
+  display: ;
   padding: 0;
   margin: 0;
 
   list-style: none;
 }
 
-.footer__item {
+.address__item {
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
@@ -652,9 +659,13 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-social {
+.join__list {
   display: flex;
-  padding-bottom: 100px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
 }
 
 .join__item {
@@ -674,7 +685,7 @@
 }
 .join__icon:hover,
 .join__icon:focus {
-  background-color: var(--acent);
+  background-color: var(--accent);
 }
 .join__icon {
   display: flex;
@@ -743,7 +754,7 @@
   border-radius: 4px;
   padding: 10px 28px;
 
-  background-color: var(--acent);
+  background-color: var(--accent);
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -785,13 +796,13 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop--hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -810,7 +821,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close__button {
+.close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -825,11 +836,11 @@
   display: flex;
 }
 
-.close__button:hover .close__button-icon,
-.close__button:focus .close__button-icon {
-  fill: var(--acent);
+.close:hover .close__icon,
+.close:focus .close__icon {
+  fill: var(--accent);
 }
-.close__button-icon {
+.close__icon {
   margin: auto;
   align-items: center;
   cursor: pointer;
@@ -885,7 +896,7 @@
 }
 
 .form__input:focus {
-  outline: 1px solid var(--acent);
+  outline: 1px solid var(--accent);
 }
 
 .form__icon {
@@ -897,7 +908,7 @@
 }
 
 .form__input:focus + .form__icon {
-  fill: var(--acent);
+  fill: var(--accent);
 }
 
 .form__comment {
@@ -928,7 +939,7 @@
 }
 
 .form__textarea:focus {
-  outline: 1px solid var(--acent);
+  outline: 1px solid var(--accent);
 }
 
 .form__button {
@@ -941,7 +952,7 @@
   border-radius: 4px;
   padding: 10px 52px;
 
-  background-color: var(--acent);
+  background-color: var(--accent);
   color: var(--white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -994,12 +1005,12 @@
 }
 
 .checkbox__input:checked ~ .checkbox__icon {
-  fill: var(--acent);
+  fill: var(--accent);
   border: transparent;
 }
 
 .checkbox__link {
-  color: var(--acent);
+  color: var(--accent);
 }
 
 /* Стилі для portfolio.html */
@@ -1053,7 +1064,7 @@
 
 .filters__button:hover,
 .filters__button:active {
-  background-color: var(--acent);
+  background-color: var(--accent);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1061,8 +1072,8 @@
   border-style: none;
   cursor: pointer;
 }
-.filters__button.current {
-  background: var(--acent);
+.filters__button--current {
+  background: var(--accent);
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);

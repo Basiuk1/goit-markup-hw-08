@@ -1,0 +1,25 @@
+.header {
+  background-color: $white;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @extend %container;
+  }
+  &__logo {
+    color: $logo-black-color;
+
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+  }
+  &__logo-web {
+    color: $accent;
+  }
+}
