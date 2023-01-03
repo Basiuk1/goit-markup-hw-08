@@ -1,9 +1,6 @@
 .customers {
   @extend %section;
-
-  &__container {
-    @extend %container;
-  }
+  @extend %container;
 
   &__title {
     text-align: center;

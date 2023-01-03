@@ -1,9 +1,6 @@
 .features {
   @extend %section;
-
-  &__container {
-    @extend %container;
-  }
+  @extend %container;
 
   &__hidden {
     margin: 0px;

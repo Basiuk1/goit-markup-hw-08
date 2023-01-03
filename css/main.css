@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.project__container, .filters__container, .footer__container, .customers__container, .working__container, .features__container, .header__container {
+.project, .filters, .footer__container, .customers, .working, .features, .header__container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;

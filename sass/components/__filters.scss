@@ -1,10 +1,9 @@
 .filters {
   @extend %section;
   padding-bottom: 50px;
+  @extend %container;
 
-  &__container {
-    @extend %container;
-  }
+  
 
   &__list {
     @extend %list;
