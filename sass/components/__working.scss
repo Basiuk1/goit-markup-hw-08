@@ -3,6 +3,10 @@
   @extend %section;
   @extend %container;
 
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   &__title {
     text-align: center;
     margin-top: 0px;
