@@ -48,7 +48,6 @@
 }
 
 .header {
-  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -165,6 +164,7 @@
 }
 */
 .menu-container {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
