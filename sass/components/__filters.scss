@@ -1,9 +1,7 @@
-/*.filters {
+.filters {
   @extend %section;
   padding-bottom: 50px;
   @extend %container;
-
-  
 
   &__list {
     @extend %list;
@@ -54,4 +52,3 @@
     }
   }
 }
-*/

@@ -20,7 +20,6 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    // color: $white;
   }
 }
 .menu-toggle {
@@ -44,6 +43,11 @@
 }
 
 @media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
   .menu-toggle {
     display: none;
   }

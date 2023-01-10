@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  //z-index: 1;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,6 +26,11 @@
     @media screen and (min-width: 768px) {
       margin: 0px;
     }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+      margin: 0px auto;
+    }
   }
 
   &__logo {
@@ -43,6 +48,8 @@
 
     @media screen and (min-width: 1200px) {
       margin-right: 93px;
+      font-size: 26px;
+      line-height: 1.19;
     }
   }
   &__logo-web {
