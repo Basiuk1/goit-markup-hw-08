@@ -1,7 +1,6 @@
 .working {
   padding-top: 0px;
   @extend %section;
-  @extend %container;
 
   @media screen and (max-width: 1199px) {
     display: none;
@@ -20,6 +19,7 @@
   }
 
   &__list {
+    @extend %container;
     @extend %list;
   }
   &__item {

@@ -1,5 +1,4 @@
 .customers {
-  @extend %container;
   @extend %section;
 
   &__title {
@@ -22,6 +21,7 @@
   }
 
   &__list {
+    @extend %container;
     @extend %list;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,11 +31,13 @@
     width: 210px;
 
     @media screen and (min-width: 768px) {
-      width: 226px;
+      flex-basis: calc((100% - 60px) / 3);
+      // width: 226px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 170px;
+      flex-basis: calc((100% - 150px) / 6);
+      // width: 170px;
     }
   }
 

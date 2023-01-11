@@ -70,6 +70,7 @@
 
   &__list {
     @extend %list;
+    padding: 0px;
     display: block;
     text-align: center;
 
@@ -125,6 +126,7 @@
   }
   &__list {
     @extend %list;
+    padding: 0px;
     justify-content: center;
   }
 

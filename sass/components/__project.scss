@@ -8,6 +8,7 @@
     justify-content: space-between;
 
     @extend %list;
+    padding: 0px;
   }
 
   &__item {
