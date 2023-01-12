@@ -2,6 +2,7 @@
 .project, .filters, .footer__container, .customers__list, .team__list, .working__list, .features__list, .header__container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0px auto;
 }
 @media screen and (min-width: 480px) {
   .project, .filters, .footer__container, .customers__list, .team__list, .working__list, .features__list, .header__container {
@@ -169,6 +170,17 @@
   background-color: #ffffff;
   z-index: 999;
   overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -244,20 +256,6 @@
   color: #2196f3;
 }
 
-.mobile-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .contacts-menu {
   padding: 0px;
   display: block;
@@ -291,14 +289,13 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 64px;
+  gap: 10px;
 }
 .social-menu__item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
   padding-right: 10px;
 }
 .social-menu__item:last-child {
-  margin-right: 0px;
   border: none;
 }
 .social-menu__link {
@@ -1219,7 +1216,8 @@
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
-    margin-right: 163px;
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {

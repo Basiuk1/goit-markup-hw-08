@@ -9,6 +9,11 @@
   z-index: 999;
   overflow-y: scroll;
 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+
   @media screen and (max-width: 449px) {
     padding: 24px 20px;
   }
@@ -90,12 +95,12 @@
   }
 }
 
-.mobile-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-between;
-}
+// .mobile-container {
+// display: flex;
+// flex-direction: column;
+// gap: 20px;
+// justify-content: space-between;
+// }
 
 .contacts-menu {
   @extend %list;
@@ -137,15 +142,16 @@
   padding: 0px;
   flex-wrap: wrap;
   padding-top: 64px;
+  gap: 10px;
 
   &__item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-    margin-right: 10px;
+    // margin-right: 10px;
     padding-right: 10px;
 
     &:last-child {
-      margin-right: 0px;
+      // margin-right: 0px;
       border: none;
     }
   }
